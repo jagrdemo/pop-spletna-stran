@@ -1,5 +1,10 @@
 body {
   background-color: antiquewhite;
+  max-width: 960px;
+  margin: auto;
+}
+h1 {
+  text-align: center;
 }
 h1, h2 {
   color: blue;
