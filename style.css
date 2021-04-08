@@ -1,0 +1,15 @@
+body {
+  background-color: antiquewhite;
+}
+h1, h2 {
+  color: blue;
+}
+p, li {
+  font-size: 16px;
+}
+.razdelek {
+  background-color: aliceblue;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+}
