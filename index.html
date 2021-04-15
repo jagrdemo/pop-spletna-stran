@@ -30,7 +30,7 @@
 
       <p>
         Pri pripravi datotek si lahko pomagamo z urejevalnikom <a href="https://code.visualstudio.com/docs/languages/html">Visual Studio Code</a>.
-        Za predogled nastajajoče spletne strani uporabimo paket <a href="https://marketplace.visualstudio.com/items?itemName=tht13.html-preview-vscode">HTML Preview</a>.
+        Za predogled nastajajoče spletne strani uporabimo paket <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer">Live Server</a> ali <a href="https://marketplace.visualstudio.com/items?itemName=tht13.html-preview-vscode">HTML Preview</a>.
       </p>
 
     </div>
@@ -50,6 +50,26 @@
     </div>
 
     <div class="razdelek">
+      <h2>Vključevanje skriptnih datotek</h2>
+
+      <p>
+        Za dodajanje interaktivnih elementov na spletno stran se uporablja programski jezik JavaScript. Kodo, napisano v tem jeziku,
+        vključujemo v spletno stran oziroma html preko značek <code>&lt;script&gt;</code>.
+      </p>
+      <p>
+        Na primer dodamo lahko gumb.
+        <button onclick="klik()">Klikni me</button>
+        <label id="po-kliku"></label>
+      </p>
+
+      <p>
+        Z uporabo zunanjih skript lahko v besedilu dodamo na primer $\LaTeX$ formule:
+        $$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
+      </p>
+      
+    </div>
+
+    <div class="razdelek">
       <h2>Vključevanje zunanjih vsebin</h2>
 
       <p>
@@ -64,6 +84,22 @@
     <footer>
       Spletna stran je bila pripravljena v okviru predavanj Programska oprema pri pouku (FMF, UNI-LJ) aprila 2021.
     </footer>
+
+    <script src="script.js"></script>
+
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        },
+        svg: {
+          fontCache: 'global'
+        }
+      };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script>
 
   </body>
 
